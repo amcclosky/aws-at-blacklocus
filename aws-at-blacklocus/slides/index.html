@@ -161,93 +161,45 @@
                     </p>
                 </section>
 
-                <!-- Below here is old stuff -->
-
-				<section>
-					<h2>How do we deploy things?</h2>
-					<br></br>
-					<h3 class="fragment">Ray talks here.</h3>
-				</section>
-
-				<section>
-					<h2>Maybe some pictures.</h2>
-					<a href="#" class="image">
-						<img width="500" height="355" src="assets/images/allthethings.png">
-					</a>
-				</section>
-
                 <section>
-					<h2>Dependency Hell</h2>
-					<br></br>
-					<h3 class="fragment">Partially solved by using Virtualenv</h3>
-					<br></br>
-					<h3 class="fragment">But we still need to address system-level dependencies</h3>
+                    <h3>Do you use Clown Services like AWS?</h3>
+                    <ul>
+                        <li class="fragment"><a href="https://github.com/rholder/guava-retrying">Guava Retrying (Java)</a></li>
+                        <li class="fragment"><a href="https://github.com/rholder/retrying">Retrying (Python)</a></li>
+                    </ul>
                 </section>
 
                 <section>
-					<h2>Solutions?</h2>
-					<br></br>
-					<h3 class="fragment"><a href="http://www.python.org/dev/peps/pep-0427/">PEP 427 - Wheel</a></h3>
-					<br></br>
-					<h3 class="fragment">The Katamari Method</h3>
-                </section>
-
-				<section>
-					<h2>Katamari Method<h2>	
-					<a href="#" class="image">
-						<img width="640" height="360" src="assets/images/katamari.jpg">
-					</a>
-					<h3>Roll everything into a ball</h3>
+                    <h3>How do we deploy things?</h3>
+                    <a href="#" class="image"><img width="640" height="360" src="assets/images/katamari.jpg"></a>
+                    <h3>Katamari Method</h3>
                 </section>
 
                 <section>
-                    <h2>Katamari Method</h2>
-                    <br></br>
-					<h3 class="fragment">Let Virtualenv manage your dependencies</h3>
-					<br></br>
-					<h3 class="fragment">Build your Virtualenv in a known location</h3>
-					<br></br>
-					<h3 class="fragment">Roll into a Debian package with <a href="https://github.com/jordansissel/fpm">FPM</a></h3>
+                    <h3>Roll everything into a deployable ball</h3>
+                    <ul>
+                        <li><a href="http://jenkins-ci.org/">Jenkins</a></li>
+                        <li><a href="http://www.gradle.org/">Gradle (Java)</a></li>
+                        <li><a href="https://github.com/rholder/debinate">Debinate (Python)</a></li>
+                        <li><a href="https://github.com/jordansissel/fpm">FPM</a></li>
+                        <li class="fragment"><a href="https://github.com/rholder/jfpm">... or jFPM</a></li>
+                    </ul>
                 </section>
 
-				<section>
-                    <h2>FPM</h2>
-                    <br></br>
-                    <h3>Frees you from using arcane Debian packaging tools</h3>
-                    <br></br>
-                    <h3>Leverage anything, like Upstart jobs, monit, etc.</h3>
-                    <br></br>                    
+                <section>
+                    <h3>BlackLocus Open Source</h3>
+                    <ul>
+                        <li><a href="https://github.com/blacklocus/angular-django-rest-resource">angular-django-rest-resource</a></li>
+                        <li><a href="https://github.com/blacklocus/jres">jres</a></li>
+                        <li><a href="https://github.com/blacklocus/metrics-cloudwatch">metrics-cloudwatch</a></li>
+                        <li><a href="https://github.com/blacklocus/jquery-formlink">jquery-formlink</a></li>
+                        <li><a href="https://github.com/blacklocus/jquery-impression">jquery-impression</a></li>
+                    </ul>
                 </section>
 
-				<section>
-					<h2>All Your Base</h2>
-					<br></br>
-					<h3>Create a base image for your project</h3>
-					<br></br>
-					<h3>Put your system-level dependencies here</h3>
-                </section>
-
-				<section>
-					<h2>Work from your Base</h2>
-					<br></br>
-					<h3 class="fragment">Curate a requirements.txt for your project</h3>
-					<br></br>
-					<h3 class="fragment">Add application level dependencies</h3>
-					<br></br>
-					<h3 class="fragment">Add system-level dependencies as needed and create a new base image when they change</h3>
-                </section>
-
-				<section>
+                <section>
                     <h3>END</h3>
                 </section>
-
-                <section>
-                    <h3>Or maybe... don't do any of this and just go learn about these</h3>
-                    <br></br>
-                    <h3><a href="http://www.docker.io">Docker</a></h3>
-                    <h3><a href="https://github.com/progrium/dokku">Dokku</a></h3>
-                </section>
-
 			</div>
 
 		</div>
